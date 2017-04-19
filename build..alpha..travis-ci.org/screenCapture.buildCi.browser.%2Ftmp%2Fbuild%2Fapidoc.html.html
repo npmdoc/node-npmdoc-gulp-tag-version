@@ -54,12 +54,58 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-tag-version">module gulp-tag-version</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-tag-version.gulp-tag-version">
+            function <span class="apidocSignatureSpan"></span>gulp-tag-version
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-tag-version" id="apidoc.module.gulp-tag-version">module gulp-tag-version</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-tag-version.gulp-tag-version" id="apidoc.element.gulp-tag-version.gulp-tag-version">
+        function <span class="apidocSignatureSpan"></span>gulp-tag-version
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-tag-version = function (opts) {
+  if(!opts) opts = {}
+  if(!opts.key) opts.key = 'version'
+  if(typeof opts.prefix === 'undefined') opts.prefix = 'v'
+  if(typeof opts.push === 'undefined') opts.push = true
+  if(typeof opts.label === 'undefined') opts.label = 'Tagging as %t'
+
+  function modifyContents(file, cb) {
+    var version = opts.version // OK if undefined at this time
+    if(!opts.version) {
+      if(file.isNull()) return cb(null, file)
+      if(file.isStream()) return cb(new Error('gulp-tag-version: streams not supported'))
+
+      var json = JSON.parse(file.contents.toString());
+      version = json[opts.key]
+    }
+    var tag = opts.prefix+version
+    var label = opts.label.replace('%t', tag)
+    gutil.log('Tagging as: '+gutil.colors.cyan(tag))
+    git.tag(tag, label, opts)
+    cb(null, file)
+  }
+
+  return map(modifyContents)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
