@@ -1,9 +1,14 @@
-# api documentation for  [gulp-tag-version (v1.3.0)](https://github.com/ikari-pl/gulp-tag-version#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-tag-version.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-tag-version) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-tag-version.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-tag-version)
+# npmdoc-gulp-tag-version
+
+#### api documentation for  [gulp-tag-version (v1.3.0)](https://github.com/ikari-pl/gulp-tag-version#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-tag-version.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-tag-version) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-tag-version.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-tag-version)
+
 #### Tag git repository with current package version
 
-[![NPM](https://nodei.co/npm/gulp-tag-version.png?downloads=true)](https://www.npmjs.com/package/gulp-tag-version)
+[![NPM](https://nodei.co/npm/gulp-tag-version.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-tag-version)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-tag-version/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-tag-version_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-tag-version/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-tag-version/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-tag-version/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-tag-version/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-tag-version/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-tag-version/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Cezar \"ikari\" Pokorski",
-        "email": "git@ikari.pl"
+        "name": "Cezar \"ikari\" Pokorski"
     },
     "bugs": {
         "url": "https://github.com/ikari-pl/gulp-tag-version/issues"
@@ -52,13 +56,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "ikari",
-            "email": "npm@ikari.pl"
+            "name": "ikari"
         }
     ],
     "name": "gulp-tag-version",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/ikari-pl/gulp-tag-version.git"
@@ -69,16 +71,6 @@
     "version": "1.3.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-tag-version](#apidoc.module.gulp-tag-version)
-
-
-
-# <a name="apidoc.module.gulp-tag-version"></a>[module gulp-tag-version](#apidoc.module.gulp-tag-version)
 
 
 
